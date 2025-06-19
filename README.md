@@ -32,14 +32,31 @@ Built using Spring Boot with Spring Web for RESTful API exposure, Redis for fast
 
 ```text
 src/
-├── config/         → Redis and Mongo config (if needed)
-├── controller/     → Main REST controller
-├── model/          → User, URL, and click models
-├── repository/     → Mongo repositories
-├── service/        → Redis wrapper and business logic
-├── util/           → Helpers like date/time formatting
-└── resources/
-    └── application.properties
+├── main/
+│   ├── java/
+│   │   └── com/handson/tinyurl/
+│   │       ├── config/            → Database configurations (MongoDB, Cassandra)
+│   │       │   ├── CassandraConfig.java
+│   │       │   └── MongoConfig.java
+│   │       ├── controller/        → REST API endpoints
+│   │       │   └── AppController.java
+│   │       ├── model/             → Data models and DTOs
+│   │       │   ├── NewTinyRequest.java
+│   │       │   ├── ShortUrl.java
+│   │       │   ├── User.java
+│   │       │   ├── UserClick.java
+│   │       │   ├── UserClickKey.java
+│   │       │   └── UserClickOut.java
+│   │       ├── repository/        → MongoDB repositories
+│   │       │   ├── UserClickRepository.java
+│   │       │   └── UserRepository.java
+│   │       ├── service/           → Business logic and Redis access
+│   │       │   └── Redis.java
+│   │       └── util/              → Utility classes
+│   │           └── Dates.java
+│   └── resources/
+│       └── application.properties
+
 ```
 
 
