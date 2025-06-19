@@ -4,7 +4,7 @@ Built using Spring Boot with Spring Web for RESTful API exposure, Redis for fast
 
 ---
 
-## ⚙Tech Stack
+## Tech Stack
 
 - **Java**
 - **Spring Boot**
@@ -19,12 +19,12 @@ Built using Spring Boot with Spring Web for RESTful API exposure, Redis for fast
 
 ## Features
 
-- 🔗 Shorten any valid long URL
-- 🧠 Automatically creates a new user if not found
-- 🔁 Redirects users from short link to original long URL
-- 📊 Tracks per-user click analytics by month
-- 🧵 Saves each click with a timestamp and long URL
-- ⚡ Fast lookup with Redis and persistent tracking with MongoDB
+- Shorten any valid long URL
+- Automatically creates a new user if not found
+- Redirects users from short link to original long URL
+- Tracks per-user click analytics by month
+- Saves each click with a timestamp and long URL
+- Fast lookup with Redis and persistent tracking with MongoDB
 
 ---
 
@@ -56,9 +56,10 @@ src/
 │   │           └── Dates.java
 │   └── resources/
 │       └── application.properties
+├── docker-compose.yml
+└── pom.xml
 
 ```
-
 
 ## API Endpoints
 
